@@ -35,11 +35,16 @@ a {
 
 header nav {
     align-items: center;
-    margin: 1em 0 0;
+    margin: 1em 1em 0;
+/*
+    position: relative;
+    right: .2em;
+*/
 }
 
 .nav_logo {
-    max-width: 170px;
+    max-width: 160px;
+    margin: 0 .7em 0 .6em;
 }
 
 .nav_about-patreon, .nav_right {
@@ -52,16 +57,21 @@ header nav {
 }
 
 .nav_about-patreon img {
-    max-height: 2.8em;
+    max-height: 2.6em;
+}
+
+.nav_about-patreon {
+    position: relative;
+    top: .1em;
 }
 
 .nav_social img {
-    max-height: 3em;
+    max-height: 2.7em;
 }
 
 .nav_social {
     position: relative;
-    bottom: .4em;
+    bottom: .45em;
 }
 
 .nav_logo.right {
@@ -77,7 +87,8 @@ header nav {
 /*----------------Comics Nav------------*/
 
 .comics nav img {
-    max-height: 1.6em;
+    max-height: 1.2em;
+    margin: 0 .5em;
 }
 
 .comics-nav_small,
@@ -85,14 +96,19 @@ header nav {
     align-items: center;
 }
 
+.comics-nav_spread {
+    margin: 1.5em 0 -.3em;
+}
+
 .comics-nav_small {
     display: none
 }
 
 h1 {
-    font: bold 1em 'im fell dw pica';
+    font: bold 1.1em 'im fell dw pica';
     text-transform: uppercase;
     text-align: center;
+    margin: 0 .5em;
 }
 
 .comic_number {
@@ -108,6 +124,20 @@ h1 {
     display: none;
 }
 
+/*----------------Comics----------------*/
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+
+article img {
+    max-width: 500px;
+    margin: 1em;
+}
+
 /*================Footer================*/
 
 footer {
@@ -115,20 +145,54 @@ footer {
     justify-content: center;
 }
 
-h2 {
-    font: bold 1em 'im fell dw pica', serif;
+h2, 
+footer p {
+    font: bold 1.1em 'im fell dw pica', serif;
 }
 
-footer p {
-    font: bold 1em 'im fell dw pica', serif;
+
+footer .comics-nav_spread {
+    margin: .8em 1em 2.3em;
+}
+
+.footer_tagline {
+    display: flex;
+    margin: 0 1em;
+}
+
+.footer_tagline a:hover {
+    text-decoration: underline;
 }
 
 /*================About=================*/
 
+.about .comics-nav_spread {
+    margin-bottom: .5em;
+}
+
+.about img {
+    margin: .5em;
+}
+
+article.about {
+    padding: 1em;
+}
+
+.about-text {
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: .5em;
+    padding: .5em .2em 0;
+    align-self: flex-start;
+}
+
 h3 {
-    font: 1.2em 'domine', serif;
+    font: 1.3em 'domine', serif;
+    line-height: 1.3em;
 }
 
 p {
-    font: 1em 'pt sans'
+    font: 1em 'pt sans';
+    margin: 1.5em 0;
+    line-height: 1.5em;
 }
