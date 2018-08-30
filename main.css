@@ -1,39 +1,67 @@
 /*----------------Tools-----------------*/
 
+/*
+nav {
+    border: 2px solid orange;
+}
+
+.nav_about-patreon, .nav_logo, .nav_social {
+    border: 2px solid red;
+}
+
+.nav_about-patreon >*, .nav_social>* {
+    border: 2px solid green;
+}
+*/
+
 /*================General===============*/
 
 nav {
     display: flex;
-    
+    justify-content: center;
 }
 
 img {
     max-width: 100%;
 }
 
+a { 
+    text-decoration: none;
+    color: #000;
+}
+
 
 /*================Header================*/
 
 header nav {
-    justify-content: center;
     align-items: center;
+    margin: 1em 0 0;
 }
 
 .nav_logo {
-    max-width: 140px;
+    max-width: 170px;
+}
+
+.nav_about-patreon, .nav_right {
+    flex: 0 1 280px;
 }
 
 .nav_about-patreon, .nav_social {
-    display: flex;
-    max-width: 280px;
+    display: flex;    
+    justify-content: space-around;
 }
 
-.nav_about-patreon {
-    
+.nav_about-patreon img {
+    max-height: 2.8em;
+}
+
+.nav_social img {
+    max-height: 3em;
 }
 
 .nav_social {
-    
+    position: relative;
+    bottom: .4em;
 }
 
 .nav_logo.right {
@@ -48,6 +76,10 @@ header nav {
 
 /*----------------Comics Nav------------*/
 
+.comics nav img {
+    max-height: 1.6em;
+}
+
 .comics-nav_small,
 .comics-nav_spread {
     align-items: center;
@@ -60,6 +92,7 @@ header nav {
 h1 {
     font: bold 1em 'im fell dw pica';
     text-transform: uppercase;
+    text-align: center;
 }
 
 .comic_number {
@@ -76,3 +109,26 @@ h1 {
 }
 
 /*================Footer================*/
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font: bold 1em 'im fell dw pica', serif;
+}
+
+footer p {
+    font: bold 1em 'im fell dw pica', serif;
+}
+
+/*================About=================*/
+
+h3 {
+    font: 1.2em 'domine', serif;
+}
+
+p {
+    font: 1em 'pt sans'
+}
