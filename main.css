@@ -156,7 +156,10 @@ header nav {
 .comics-nav img {
     max-height: 1.2em;
     padding: 0 .5em;
-    flex-shrink: 0;
+}
+
+.comics-nav > a {
+    flex-shrink: 0
 }
 
 .comics-nav.small,
@@ -177,7 +180,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     margin: 0 .5em;
-    flex-shrink: 10;
+    flex-shrink: 1;
 }
 
 .comic_number {
@@ -205,6 +208,7 @@ article {
 article img {
     max-width: 500px;
     margin: 1em;
+    width: 100%;
 }
 
 /*================Footer================*/
@@ -217,7 +221,9 @@ footer {
 h2, 
 footer p {
     font: bold 1.1em 'im fell dw pica', serif;
+    text-align: center;
 }
+
 
 
 .comics-nav.foot {
@@ -231,6 +237,39 @@ footer p {
 
 .footer_tagline a:hover {
     text-decoration: underline;
+}
+
+.test {
+    width: 120px;
+}
+
+.spacing-fix {
+    width: 126px;
+}
+
+@media all and (max-width:690px) {
+    
+}
+
+@media all and (max-width:534px) {
+    
+    .vertical-bar {
+        display: none;
+    }
+    
+    .horizontal-bar {
+        display: block;
+    }
+    
+    .footer_tagline {
+        flex-flow: column;
+    }
+    
+    h2,
+    footer p {
+        line-height: 1em;
+    }
+
 }
 
 /*================About=================*/
