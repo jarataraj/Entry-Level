@@ -16,15 +16,38 @@ nav {
 
 /*
 .nav_right {
-    border: 1px dashed blue;
+    border: 1.5px dashed blue;
 }
 
 .nav_right >* {
-    border: 1px solid green;
+    border: 1.5px solid red;
 }
 
 .nav_right >*>* {
-    border: 1px dotted purple;
+    border: 1.5px dotted green;
+}
+*/
+
+/*----------------Testing---------------*/
+
+/*
+h1{
+    max-height: 1.5em;
+}
+*/
+
+/*
+h1 {
+    min-height: 1.7em;
+}
+
+.comics-nav.head.spread img {
+    position: relative;
+    bottom: .3em
+}
+
+.comics-nav.head.spread {
+    margin-bottom: -.7em;
 }
 */
 
@@ -57,7 +80,7 @@ header nav {
 }
 
 .nav_logo {
-    flex: 0 1 160px;
+    width: 160px;
     margin: 0 calc(1.1em + .01 * (100% - 720px));
 }
 
@@ -100,6 +123,10 @@ header nav {
 
 @media all and (max-width:720px) {
     
+    header nav {
+        margin: 1em 0 0;
+    }
+    
     .nav_about-patreon.left {
         display: none;
     }
@@ -110,7 +137,7 @@ header nav {
     }
     
     .nav_logo {
-        flex: 0 1 140px;
+        width:  140px;
         margin: 0;
     }
     
@@ -129,9 +156,39 @@ header nav {
     .nav_social img {
         max-width: 2.6em;
     }
+    
+/*
+    .comics-nav.head.spread {
+        margin-bottom: -.7em;
+    }
+*/
 }
 
-@media all and 
+@media all and (max-width:455px) {
+    
+    .nav_logo {
+        display: none;
+    }
+    
+    .nav_logo.right {
+        display: block;
+    }
+    
+    .nav_right{
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 0 -.5em;
+    }
+    
+    .nav_social {
+        width: 100%;
+        bottom: 0;
+        margin: .5em 0 .3em;
+    }
+
+}
 
 /*================Article===============*/
 
@@ -184,6 +241,14 @@ h1 {
     display: none;
 }
 
+@media all and (max-width:620px) {
+    
+    h1 {
+        max-width: 285px;
+    } 
+/*    ^ attempts to prevent a single word wrapping    */
+}
+
 @media all and (max-width:430px) {
     
     .comics-nav.head.spread img {
@@ -192,7 +257,7 @@ h1 {
     
     .comics-nav.head.small {
         display: flex;
-        margin: 1em 0 -.8em;
+        margin: .5em 0 -.8em;
     }
     
     .comics-nav.head.small img {
