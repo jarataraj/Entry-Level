@@ -276,8 +276,9 @@ article {
 
 article img {
     max-width: 500px;
+    max-height: 100vh;
+    width: auto;
     margin: 1em;
-    width: 100%;
 }
 
 /*================Footer================*/
