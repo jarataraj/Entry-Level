@@ -81,11 +81,12 @@ header nav {
 
 .nav_logo {
     width: 160px;
+/*    flex-shrink: 0;*/
     margin: 0 calc(1.1em + .01 * (100% - 720px));
 }
 
 .nav_about-patreon, .nav_right {
-    flex: 0 1 230px;
+    width:230px;
 }
 
 .nav_about-patreon, .nav_social {
@@ -133,7 +134,7 @@ header nav {
     
     .nav_about-patreon.right {
         display: flex;
-/*        width: 220px;*/
+        width: 225px;
     }
     
     .nav_logo {
@@ -142,13 +143,17 @@ header nav {
     }
     
     .nav_right {
-        flex-basis: 215px;
+/*        flex-basis: 215px;*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         position: relative;
         top: 1.1em;
-        margin-left: 1.1em;
+        margin-left: 1.3em;
     }
     
     .nav_social {
+        width: 215px;
         right: .2em;
         bottom: .3em;
     }
@@ -175,15 +180,12 @@ header nav {
     }
     
     .nav_right{
-        position: static;
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        position: static;
         margin: 0 0 -.5em;
     }
     
     .nav_social {
-        width: 100%;
         bottom: 0;
         margin: .5em 0 .3em;
     }
@@ -257,7 +259,7 @@ h1 {
     
     .comics-nav.head.small {
         display: flex;
-        margin: .5em 0 -.8em;
+        margin: .8em 0 -.8em;
     }
     
     .comics-nav.head.small img {
