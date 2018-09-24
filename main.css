@@ -383,7 +383,13 @@ footer p {
 }
 
 article.about {
-    padding: 1em;
+    padding: 1em 1em 0;
+}
+
+.about-panel {
+    margin-bottom: 1em;
+    padding: 0 .3em;
+    box-sizing: border-box;
 }
 
 .about-text {
