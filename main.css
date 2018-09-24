@@ -259,11 +259,16 @@ h1 {
     
     .comics-nav.head.small {
         display: flex;
-        margin: .8em 0 -.8em;
+        margin: .8em 0 -.5em;
     }
     
     .comics-nav.head.small img {
         margin: 0 .5em;
+    }
+    
+    #jump-to {
+        position: relative;
+        top: .5em;
     }
 }
 
