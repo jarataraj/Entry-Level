@@ -197,7 +197,7 @@ header nav {
 /*----------------Comics Nav------------*/
 
 .comics-nav {
-    padding: 0 .5em;
+    padding: 0 1.5em;
 }
 
 .comics-nav img {
@@ -251,7 +251,7 @@ h1 {
 /*    ^ attempts to prevent a single word wrapping    */
 }
 
-@media all and (max-width:430px) {
+@media all and (max-width:460px) {
     
     .comics-nav.head.spread img {
         display: none;
@@ -362,7 +362,8 @@ footer p {
     
     .comics-nav.foot.small {
         display: flex;
-        margin: 0 0 1em;
+        width: 100%;
+        margin: 0 0 .6em;
     }
     
     .comics-nav.foot img {
