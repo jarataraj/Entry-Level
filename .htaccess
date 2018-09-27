@@ -1,0 +1,26 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redirect to HTTPS://www.
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.entrylevelcomics.com/$1 [R=301,L]
+
+# Deflate files
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text \
+text/html \
+text/plain \
+text/xml \
+text/css \
+image/svg+xml \
+font/opentype \
+application/x-javascript \
+application/javascript \
+application/x-font-ttf \
+application/xhtml+xml \
+application/xml \
+</IfModule>
