@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+    
+    <head>     
+        <meta charset='utf-8'/>
+        <title>Entry Level Comics</title>
+        <meta name='description' content=''/><!--NTE ~160 characters-->
+        
+        <!--Insert favicon using https://realfavicongenerator.net/-->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.entrylevelcomics.com/new-images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://www.entrylevelcomics.com/new-images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://www.entrylevelcomics.com/new-images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="https://www.entrylevelcomics.com/new-images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="https://www.entrylevelcomics.com/new-images/favicons/safari-pinned-tab.svg" color="#c87171">
+        <link rel="shortcut icon" href="https://www.entrylevelcomics.com/new-images/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="https://www.entrylevelcomics.com/new-images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel='stylesheet' href='eric_meyers_reset.css'/>
+        <link rel='stylesheet' href='main.css'/>
+        
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Domine|IM+Fell+DW+Pica|PT+Sans" rel="stylesheet">
+                  
+        <!--Scripts-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" defer></script>
+        <script type="text/javascript" src="scripts.js" defer></script>
+        
+        <!--Responsive media tag-->
+        <meta name=viewport content='width=device-width, initial-scale=1'>
+        
+        <!-- MailerLite Universal -->
+        <script>
+        (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+        var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+        f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+        var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+        _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+        var ml_account = ml('accounts', '1242600', 'b4d3a9u2t1', 'load');
+        </script>
+        <!-- End MailerLite Universal -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126540837-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-126540837-1');
+        </script>
+      
+      <style>
+        /*================General===============*/
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+a { 
+    text-decoration: none;
+    color: #000;
+}
+
+/*================Header================*/
+
+header nav {
+    align-items: center;
+    justify-content: center;
+    margin: 1em 2em 0;
+/*
+    position: relative;
+    right: .2em;
+*/
+}
+
+.nav_logo {
+    width: 160px;
+/*    flex-shrink: 0;*/
+    margin: 0 calc(1.1em + .01 * (100% - 720px));
+}
+
+
+/*================Article===============*/
+
+/*----------------Comics Nav------------*/
+
+.comics-nav {
+    padding: 0 1.5em;
+}
+
+.comics-nav img {
+    max-height: 1.25em;
+    padding: 0 .5em;
+}
+
+.comics-nav > a {
+    flex-shrink: 0
+}
+
+.comics-nav.small,
+.comics-nav.spread {
+    align-items: center;
+}
+
+.comics-nav.spread {
+    margin: 1.6em 0 0em;
+}
+
+.comics-nav.small {
+    display: none;
+}
+
+h1 {
+    font: bold 1.05em 'im fell dw pica';
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 .5em;
+    flex-shrink: 1;
+}
+
+.comic_number {
+    font: bold .9em 'domine', serif;
+}
+
+
+.vertical-bar {
+    align-self: flex-start;
+}
+
+.horizontal-bar {
+    display: none;
+}
+
+@media all and (max-width:620px) {
+    
+    h1 {
+        max-width: 285px;
+    } 
+/*    ^ attempts to prevent a single word wrapping    */
+}
+
+@media all and (max-width:460px) {
+    
+    .comics-nav.head.spread img {
+        display: none;
+    }
+    
+    .comics-nav.head.small {
+        display: flex;
+        margin: .8em 0 -.5em;
+    }
+    
+    .comics-nav.head.small img {
+        margin: 0 .5em;
+    }
+    
+    #jump-to {
+        position: relative;
+        top: .5em;
+    }
+}
+
+/*----------------Comic Panels----------------*/
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+
+article img {
+    max-width: 100%;
+    max-height: 95vh;
+}
+
+.comic-panel {
+    max-width: 500px;
+    margin: 1.3em;
+}
+
+/*================Footer================*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+h2, 
+footer p {
+    font: bold 1.1em 'im fell dw pica', serif;
+    text-align: center;
+}
+
+.comics-nav.foot {
+    margin: .6em 0 1.5em;
+}
+
+.footer_tagline {
+    display: flex;
+    margin: 0 .6em;
+}
+
+.footer_tagline a:hover {
+    text-decoration: underline;
+}
+
+@media all and (max-width:690px) {
+    h2 {
+        width: 8em;
+    }
+    
+    .footer_tagline {
+        margin: 0;
+    }
+}
+
+@media all and (max-width:534px) {
+    
+    .vertical-bar {
+        display: none;
+    }
+    
+    .horizontal-bar {
+        display: block;
+    }
+    
+    h2 {
+        width: auto;
+    }
+    
+    .footer_tagline {
+        flex-flow: column;
+        margin: 0 .5em;
+    }
+    
+    h2,
+    footer p {
+        line-height: 1em;
+    }
+
+}
+
+@media all and (max-width:425px) {
+    
+    .comics-nav.foot.spread img {
+        display: none;
+    }
+    
+    .comics-nav.foot.small {
+        display: flex;
+        width: 100%;
+        margin: 0 0 .6em;
+    }
+    
+    .comics-nav.foot img {
+        margin: 0 .5em
+    }
+}
+    
+/*=====================Email===========================*/
+    
+.email {
+    
+    font: 1em "PT Sans", san-serif;
+    margin: 1em 2em;
+}
+
+    </style>  
+      
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <a class="nav_logo" href="https://www.entrylevelcomics.com/">
+                    <img src="https://www.entrylevelcomics.com/new-images/navigation/logo.png">
+                </a>
+            </nav>
+        </header>
+        
+        <div id="jump-to"></div><!--Jump-to point for anchor tag-->
+        
+        
+            <p class="email">Have you ever had to sit through an awkward happy hour with coworkers?  Relive the embarassment with this week's Entry Level comic!</p>
+            <p class="email">Here's a tip on how to gracefully maneuver workplace happy hours and social events:</p>
+            <p class="email">For moments when you find yourself left out of the group's conversation, come prepared with some incendiary ideas to insert yourself back into the discussion.
+            <br>Example A: "I don't watch sports because I think they're a waste of time."
+            <br>Example B: "I haven't actually read the Harry Potter books. The movies are enough for me."
+            <br>Example C: "I'm a cat person."</p>
+        
+        <section class="comics">
+            <nav  class='comics-nav head spread'>
+                <a href="comic1" title="First comic"><img alt="first comic" src="https://www.entrylevelcomics.com/new-images/navigation/arrow-left-double.png"></a>
+                <a href="comic6" title="Previous comic"><img alt="previous comic" src="https://www.entrylevelcomics.com/new-images/navigation/arrow-left.png"></a>
+                <h1> Comic #<span class="comic_number">7</span>: Happy? Hour</h1> 
+                <a><img src="https://www.entrylevelcomics.com/new-images/navigation/arrow-invisible.png"></a>
+                <a><img src="https://www.entrylevelcomics.com/new-images/navigation/arrow-double-invisible.png"></a>
+            </nav>
+            
+            <nav class='comics-nav head small'>
+                <a href="comic1" title="First comic"><img alt="first comic" src="https://www.entrylevelcomics.com/new-images/navigation/arrow-left-double.png"></a>
+                <a href="comic6#jump-to" title="Previous comic"><img alt="previous comic" src="https://www.entrylevelcomics.com/new-images/navigation/arrow-left.png"></a>        
+            </nav>            
+            
+            <article>
+                <div class='comic-panel'><img src="https://www.entrylevelcomics.com/new-images/comic-panels/comic7panel1.png"></div>
+                <div class='comic-panel'><img src="https://www.entrylevelcomics.com/new-images/comic-panels/comic7panel2.png"></div>
+                <div class='comic-panel'><img src="https://www.entrylevelcomics.com/new-images/comic-panels/comic7panel3.png"></div>
+                <div class='comic-panel'><img src="https://www.entrylevelcomics.com/new-images/comic-panels/comic7panel4.png"></div>
+                <div class='comic-panel'><img src="https://www.entrylevelcomics.com/new-images/comic-panels/comic7panel5.png"></div>
+                <div class='comic-panel'><img src="https://www.entrylevelcomics.com/new-images/comic-panels/comic7panel6.png"></div>
+            </article> 
+        
+            <footer>
+                <nav class='comics-nav foot small'>
+                    <a href="comic1" title="First comic"><img alt="first comic" src="https://www.entrylevelcomics.com/new-images/navigation/arrow-left-double.png"></a>
+                    <a href="comic6#jump-to" title="Previous comic"><img alt="previous comic" src="https://www.entrylevelcomics.com/new-images/navigation/arrow-left.png"></a>            
+                </nav>
+                
+                <nav class='comics-nav foot spread'>
+                    <a href="comic1" title="First comic"><img alt="first comic" src="https://www.entrylevelcomics.com/new-images/navigation/arrow-left-double.png"></a>
+                    <a href="comic6" title="Previous comic"><img alt="previous comic" src="https://www.entrylevelcomics.com/new-images/navigation/arrow-left.png"></a>
+                    <div class="footer_tagline">
+                        <h2>New comic every Wednesday</h2>
+                    </div>
+                    <a><img src="https://www.entrylevelcomics.com/new-images/navigation/arrow-invisible.png"></a>
+                    <a><img src="https://www.entrylevelcomics.com/new-images/navigation/arrow-double-invisible.png"></a>
+                </nav>
+                
+            </footer>
+        
+        </section>
+    </body>
+    
+</html>
